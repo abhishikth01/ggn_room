@@ -1,9 +1,9 @@
-data "aws_vpc" "ggn_vpc" {
+data "aws_vpc" "ggn_vpc_dev" {
   id = "vpc-b6806bde"
 }
 
 resource "aws_subnet" "dmc1" {
-  vpc_id            = "${data.aws_vpc.ggn_vpc.id}"
+  vpc_id            = "${data.aws_vpc.ggn_vpc_dev.id}"
   availability_zone = "ap-south-1a"
   cidr_block        = "10.1.0.0/28"
   map_public_ip_on_launch = "true"
