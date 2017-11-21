@@ -1,5 +1,5 @@
 data "aws_vpc" "ggn_vpc" {
-  id = "vpc-cdb259a5"
+  id = "vpc-b6806bde"
 }
 
 resource "aws_subnet" "dmc1" {
@@ -12,4 +12,3 @@ resource "aws_subnet" "dmc1" {
     Name = "sub_dmc1"
   }
 }
-/*tihs is testing*/
