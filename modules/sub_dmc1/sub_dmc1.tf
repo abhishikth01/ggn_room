@@ -12,3 +12,5 @@ resource "aws_subnet" "dmc1" {
     Name = "sub_dmc1"
   }
 }
+
+/*test*?
