@@ -1,4 +1,4 @@
-data "aws_vpc" "my_vpc"
+data "aws_vpc" "ggn_vpc"
   id = "vpc-cdb259a5"
 
 resource "aws_subnet" "dmc1" {
