@@ -1,5 +1,6 @@
-data "aws_vpc" "ggn_vpc"
+data "aws_vpc" "ggn_vpc" {
   id = "vpc-cdb259a5"
+}
 
 resource "aws_subnet" "dmc1" {
   vpc_id            = "${data.aws_vpc.ggn_vpc.id}"
