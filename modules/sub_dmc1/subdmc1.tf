@@ -1,3 +1,6 @@
+data "aws_vpc" "my_vpc"
+  name = "ggn_vpc01"
+
 resource "aws_subnet" "dmc1" {
   vpc_id            = "${aws_vpc.my_vpc.id}"
   availability_zone = "ap-south-1a"
