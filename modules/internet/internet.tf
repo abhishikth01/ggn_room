@@ -9,8 +9,6 @@ data "aws_subnet" "ggn_dmc2" {
   id = "subnet-c0ad5ea8"
 }
 
-
-
 resource "aws_internet_gateway" "gw" {
   vpc_id = "${data.aws_vpc.ggn_vpc_dev.id}"
 
